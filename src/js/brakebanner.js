@@ -17,9 +17,9 @@ class BrakeBanner{
 		this.loader.load()
 		// 加载成功回调
 		this.loader.onComplete.add(() => {
-			// 精灵图实例
+			// 雪碧图实例化
 			const btn = new PIXI.Sprite(this.loader.resources['btn.png'].texture)
-			// 将精灵图添加到画布
+			// 将雪碧图添加到画布
 			this.app.stage.addChild(btn)
 		})
 	}
